@@ -1,0 +1,139 @@
+/* CV Renderer Styles - Enforce IB Standards */
+
+/* Force Times New Roman for IB templates */
+.cv-ib-font {
+  font-family: 'Crimson Text', 'Times New Roman', serif !important;
+  font-size: 10pt !important;
+  line-height: 1.15 !important;
+  color: #000000 !important;
+}
+
+/* Force Inter for tech templates */
+.cv-tech-font {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11pt !important;
+  line-height: 1.35 !important;
+  color: #1a1a1a !important;
+}
+
+/* Remove all colors for IB (pure black only) */
+.cv-ib-font h1,
+.cv-ib-font h2,
+.cv-ib-font h3,
+.cv-ib-font p,
+.cv-ib-font span,
+.cv-ib-font li {
+  color: #000000 !important;
+}
+
+/* Condensed margins for one-page fit */
+.cv-ib-margins {
+  margin: 0.5in !important;
+  padding: 0 !important;
+}
+
+.cv-tech-margins {
+  margin: 0.75in !important;
+  padding: 0 !important;
+}
+
+/* Section spacing */
+.cv-section {
+  margin-bottom: 8pt !important;
+}
+
+/* Name styling */
+.cv-ib-name {
+  font-size: 20pt !important;
+  font-weight: 600 !important;
+  letter-spacing: 1pt !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+}
+
+.cv-tech-name {
+  font-size: 24pt !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.5pt !important;
+}
+
+/* Company name styling */
+.cv-ib-company {
+  font-size: 11pt !important;
+  font-weight: 600 !important;
+}
+
+.cv-tech-company {
+  font-size: 13pt !important;
+  font-weight: 600 !important;
+}
+
+/* Section header styling */
+.cv-ib-header {
+  font-size: 12pt !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  border-bottom: 1pt solid #000 !important;
+  padding-bottom: 2pt !important;
+  margin-bottom: 6pt !important;
+  margin-top: 8pt !important;
+  letter-spacing: 0.5pt !important;
+}
+
+.cv-tech-header {
+  font-size: 14pt !important;
+  font-weight: 600 !important;
+  border-bottom: 1.5pt solid #1a1a1a !important;
+  padding-bottom: 3pt !important;
+  margin-bottom: 8pt !important;
+  margin-top: 12pt !important;
+}
+
+/* Bullet point spacing */
+.cv-bullets {
+  margin-left: 20pt !important;
+  padding-left: 0 !important;
+}
+
+.cv-bullets li {
+  margin-bottom: 3pt !important;
+}
+
+/* Date alignment */
+.cv-date-right {
+  text-align: right !important;
+  white-space: nowrap !important;
+}
+
+/* Print optimization */
+@media print {
+  .cv-document {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .cv-no-break {
+    page-break-inside: avoid !important;
+  }
+}
+
+/* One-page enforcement warning */
+.cv-page-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fee2e2;
+  border-bottom: 2px solid #dc2626;
+  color: #991b1b;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+  z-index: 1000;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}

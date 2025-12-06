@@ -1,0 +1,61 @@
+project_id = "fxffygvrkcsdfhachvuj"
+
+[functions.openbb-ticker-data]
+verify_jwt = false
+
+[functions.fetch-news]
+verify_jwt = false
+
+[functions.text-to-speech]
+verify_jwt = false
+
+[functions.fetch-company-profile]
+verify_jwt = false
+
+[functions.fetch-insider-trades]
+verify_jwt = false
+
+[functions.fetch-market-data]
+verify_jwt = false
+
+[functions.fetch-crypto-data]
+verify_jwt = false
+
+[functions.fetch-economic-calendar]
+verify_jwt = false
+
+[functions.fetch-earnings-calendar]
+verify_jwt = false
+
+[functions.fetch-sector-performance]
+verify_jwt = false
+
+[functions.fetch-etf-data]
+verify_jwt = false
+
+[functions.fetch-stock-screener]
+verify_jwt = false
+
+[functions.fetch-options-data]
+verify_jwt = false
+
+[functions.fetch-analyst-ratings]
+verify_jwt = false
+
+[functions.fetch-key-metrics]
+verify_jwt = false
+
+[functions.openbb-deep]
+verify_jwt = false
+
+[functions.finance-tv-news]
+verify_jwt = false
+
+[functions.university-platform]
+verify_jwt = false
+
+[functions.finance-assistant]
+verify_jwt = false
+
+[functions.analyze-report]
+verify_jwt = false
